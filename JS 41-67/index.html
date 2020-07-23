@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table{
+            display: block;
+        }
+        .para{
+            border: 2px solid orange;
+        }
+        .input{
+            display: none;
+        }
+        .expand{
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- <a href="#" onclick="alert('Hello World')">Click Me</a> -->
+
+    <!-- <img src="https://www.whatmobile.com.pk/admin/images/Huawei/HuaweiP30Pro-b.jpg" alt="" width="180" height="160">
+    <img src="https://www.whatmobile.com.pk/admin/images/Huawei/HuaweiP30Pro-b.jpg" alt="" width="180" height="160">
+    <img src="https://www.whatmobile.com.pk/admin/images/Huawei/HuaweiP30Pro-b.jpg" alt="" width="180" height="160">
+    <img src="https://www.whatmobile.com.pk/admin/images/Huawei/HuaweiP30Pro-b.jpg" alt="" width="180" height="160"> -->
+
+    <!-- <table>
+        <tr>
+            <th>
+                Index
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Class
+            </th>
+        </tr>
+        <tr class="record">
+            <td>1</td>
+            <td>John</td>
+            <td>10</td>
+            <td><button>Delete</button></td>
+            </t>
+            <tr class="record">
+                <td>2</td>
+                <td>Doe</td>
+                <td>10</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr class="record">
+                <td>3</td>
+                <td>Alex</td>
+                <td>10</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr class="record">
+                <td>4</td>
+                <td>James</td>
+                <td>10</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr class="record">
+                <td>5</td>
+                <td>Alexa</td>
+                <td>10</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr class="record">
+                <td>6</td>
+                <td>Mich</td>
+                <td>10</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr class="record">
+                <td>7</td>
+                <td>Mony</td>
+                <td>10</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr class="record">
+                <td>8</td>
+                <td>Clay</td>
+                <td>10</td>
+                <td><button>Delete</button></td>
+            </tr>
+    </table> -->
+
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQNWZyCYJ-lzOkBL2P3S2emvkvQ3fq9uW7C6w&usqp=CAU" alt=""> -->
+
+    <!-- <h1>0</h1>
+    <button id="inc">Increment</button>
+    <button id="dec">Decrement</button> -->
+
+    <!-- <form>
+            <label for="Enail">Email</label>
+            <input type="email" name="email" id="email" required><br><br>
+            <label for="Password">Password</label>
+            <input type="password" name="pasword" id="pass" required><br><br>
+            <input type="button" id="submit" value="submit" name="submit" />
+        </form>
+        <p>
+            <span id="display"></span>
+        </p> -->
+
+<!-- <div class="para">
+    <p id="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quibusdam harum</p>
+    <a href="javascript:void(0);" id="exp" onclick="showMore()">Click for more</a>
+</div>  -->
+<!-- <div>
+    <h1> DOM </h1>
+    <div id="form-content" class="content">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" />
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" />
+    <label for="email">Email</label>
+    <input type="text" id="email" />
+    </div>
+    <div id="main-content" class="content">
+    <p class="render"> First Name : Alex</p>
+    <p class="render" id="lastName">Last Name: Bank</p>
+    <p class="render"> Email : alexbank@example.com</p>
+    <p class="render"> Country : Pakistan </p>
+    <p class="render"> contact : +92 300 1234567</p>
+    </div>
+    </div> -->
+
+
+<!-- <div> <h1> DOM </h1> <div id="form-content" class="content"> <label for="first-name">First Name</label> <input type="text" id="first-name"/> <label for="last-name">Last Name</label> <input type="text" id="last-name"/> <label for="email">Email</label> <input type="text" id="email"/> </div><div id="main-content" class="content"><p class="render"> First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p><p class="render"> Country : Pakistan </p><p class="render"> contact : +92 300 1234567</p></div></div> -->
+    <table>
+        <tr>
+            <th>
+                Index
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Class
+            </th>
+        </tr>
+        <tr class="record">
+            <td>1</td>
+            <td>John</td>
+            <td>10</td>
+            <td><button onclick="delBtn(this)">Delete</button></td>
+            <td><button id="edit" onclick="editButton(this)">Edit</button></td>
+            </t>
+            <tr class="record">
+                <td>2</td>
+                <td>Doe</td>
+                <td>10</td>
+                <td><button onclick="delBtn(this)">Delete</button></td>
+                <td><button id="edit" onclick="editButton(this)">Edit</button></td>
+            </tr>
+            <tr class="record">
+                <td>3</td>
+                <td>Alex</td>
+                <td>10</td>
+                <td><button onclick="delBtn(this)">Delete</button></td>
+                <td><button id="edit" onclick="editButton(this)">Edit</button></td>
+            </tr>
+            <tr class="record">
+                <td>4</td>
+                <td>James</td>
+                <td>10</td>
+                <td><button onclick="delBtn(this)">Delete</button></td>
+                <td><button id="edit" onclick="editButton(this)">Edit</button></td>
+            </tr>
+            <tr class="record">
+                <td>5</td>
+                <td>Alexa</td>
+                <td>10</td>
+                <td><button onclick="delBtn(this)">Delete</button></td>
+                <td><button id="edit" onclick="editButton(this)">Edit</button></td>
+            </tr>
+            <tr class="record">
+                <td>6</td>
+                <td>Mich</td>
+                <td>10</td>
+                <td><button onclick="delBtn(this)">Delete</button></td>
+                <td><button id="edit" onclick="editButton(this)">Edit</button></td>
+            </tr>
+            <tr class="record">
+                <td>7</td>
+                <td>Mony</td>
+                <td>10</td>
+                <td><button onclick="delBtn(this)">Delete</button></td>
+                <td><button id="edit" onclick="editButton(this)">Edit</button></td>
+            </tr>
+            <tr class="record">
+                <td>8</td>
+                <td>Clay</td>
+                <td>10</td>
+                <td><button onclick="delBtn(this)">Delete</button></td>
+                <td><button id="edit" onclick="editButton(this)">Edit</button></td>
+            </tr>
+    </table>
+    <!-- <div id="image">
+        <img src="images/others/1.jpg" alt="" onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" id="image" width="300px" height="250px">
+        <img src="images/others/10.jpg" alt="" onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" id="image" width="300px" height="250px">
+        <img src="images/others/13.jpg" alt="" onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" id="image" width="300px" height="250px">
+        <img src="images/others/2.jpg" alt="" onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" id="image" width="300px" height="250px">
+        <img src="images/others/4.png" alt="" onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" id="image" width="300px" height="250px">
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="" alt="" id="modalImage" height="300px" width="300px">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="app.js "></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
